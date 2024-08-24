@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card de Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .news-card {
+            width: calc(50% - 10px); /* Tamanho ajustado para 2 cards por linha com espaçamento */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            padding: 16px;
+            margin-bottom: 10px;
+        }
+
+        .news-card h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 16px;
+            margin: 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .news-item {
+            display: flex;
+            padding: 16px 0;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-right: 16px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .news-item div {
+            flex: 1;
+        }
+
+        .news-item a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+
+        .news-item p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="news-card">
+        <h2>Últimas Notícias</h2>
+
+        <div class="news-item">
+            <img src="caminho-para-imagem-1.jpg" alt="Notícia 1">
+            <div>
+                <a href="link-para-noticia-1">Título da Notícia 1</a>
+                <p>Breve descrição da notícia 1.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="caminho-para-imagem-2.jpg" alt="Notícia 2">
+            <div>
+                <a href="link-para-noticia-2">Título da Notícia 2</a>
+                <p>Breve descrição da notícia 2.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="caminho-para-imagem-3.jpg" alt="Notícia 3">
+            <div>
+                <a href="link-para-noticia-3">Título da Notícia 3</a>
+                <p>Breve descrição da notícia 3.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="caminho-para-imagem-4.jpg" alt="Notícia 4">
+            <div>
+                <a href="link-para-noticia-4">Título da Notícia 4</a>
+                <p>Breve descrição da notícia 4.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="caminho-para-imagem-5.jpg" alt="Notícia 5">
+            <div>
+                <a href="link-para-noticia-5">Título da Notícia 5</a>
+                <p>Breve descrição da notícia 5.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
